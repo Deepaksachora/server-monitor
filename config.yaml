@@ -1,0 +1,15 @@
+servers:
+  - server:
+      healthcheck_url: https://www.mybrandmall.com/login.admin
+      healthy_status: 200
+      timeout_duration: 30
+      display_name: MyBrandMall Server (PROD)
+  - server:
+      healthcheck_url: http://localhost:9795/
+      healthy_status: 200
+      timeout_duration: 5
+      display_name: Test Server Down
+
+smtp:
+  server: smtp.gmail.com
+  port: 587

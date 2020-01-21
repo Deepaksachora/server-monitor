@@ -2,13 +2,123 @@ servers:
   - server:
       healthcheck_url: https://www.mybrandmall.com/login.admin
       healthy_status: 200
-      timeout_duration: 30
+      timeout_duration: 60
       display_name: MyBrandMall Server (PROD)
   - server:
-      healthcheck_url: http://localhost:9795/
+      healthcheck_url: https://www.mybrandmall.com/preview/login.admin
       healthy_status: 200
-      timeout_duration: 5
-      display_name: Test Server Down
+      timeout_duration: 60
+      display_name: MyBrandMall Server (PROD)
+  - server:
+      healthcheck_url: https://www.mybrandmall.com/cla
+      healthy_status: 200
+      timeout_duration: 60
+      display_name: MyBrandMall Server (PROD)
+  - server:
+      healthcheck_url: https://www.mybrandmall.com/facebook
+      healthy_status: 200
+      timeout_duration: 60
+      display_name: MyBrandMall Server (PROD)
+  - server:
+      healthcheck_url: https://www.mybrandmall.com/fixauto/
+      healthy_status: 200
+      timeout_duration: 60
+      display_name: MyBrandMall Server (PROD)
+  - server:
+      healthcheck_url: https://store.mybrandmall.com/johnsmanville
+      healthy_status: 200
+      timeout_duration: 60
+      display_name: MyBrandMall Server (PROD)
+  - server:
+      healthcheck_url: https://www.mylogogear.com/shop/login.admin
+      healthy_status: 200
+      timeout_duration: 60
+      display_name: SHOPSTAR1-PROD
+  - server:
+      healthcheck_url: https://www.mylogogear.com/staging/login.admin
+      healthy_status: 200
+      timeout_duration: 60
+      display_name: SHOPSTAR1-PROD
+  - server:
+      healthcheck_url: https://www.mylogogear.com/shop/20130712004/c-13069.htm
+      healthy_status: 200
+      timeout_duration: 60
+      display_name: SHOPSTAR1-PROD
+  - server:
+      healthcheck_url: http://www.mylogogear.com/shop/20140620009/c-21514.htm
+      healthy_status: 200
+      timeout_duration: 60
+      display_name: SHOPSTAR1-PROD
+  - server:
+      healthcheck_url: https://www.mylogocloud.com/login.admin
+      healthy_status: 200
+      timeout_duration: 60
+      display_name: Mylogocloud (AWS-PROD)
+  - server:
+      healthcheck_url: https://www.mylogocloud.com/preview/login.admin
+      healthy_status: 200
+      timeout_duration: 60
+      display_name: Mylogocloud (AWS-PROD)
+  - server:
+      healthcheck_url: https://www.swathestore.com/
+      healthy_status: 200
+      timeout_duration: 60
+      display_name: Mylogocloud (AWS-PROD)
+  - server:
+      healthcheck_url: https://www.bemagenta.com/
+      healthy_status: 200
+      timeout_duration: 60
+      display_name: Mylogocloud (AWS-PROD)
+  - server:
+      healthcheck_url: https://www.mypromomall.com/login.admin
+      healthy_status: 200
+      timeout_duration: 60
+      display_name: Mypromomall(AWS-PROD)
+  - server:
+      healthcheck_url: https://www.mypromomall.com/preview/login.admin
+      healthy_status: 200
+      timeout_duration: 60
+      display_name: Mypromomall(AWS-PROD)
+  - server:
+      healthcheck_url: https://www.topgolfcompanystore.com
+      healthy_status: 200
+      timeout_duration: 60
+      display_name: Mypromomall(AWS-PROD)
+  - server:
+      healthcheck_url: https://cb.mypromomall.com/login.admin
+      healthy_status: 200
+      timeout_duration: 60
+      display_name: cb.mypromomall(AWS-PROD)
+  - server:
+      healthcheck_url: https://cb.mypromomall.com/preview/login.admin
+      healthy_status: 200
+      timeout_duration: 60
+      display_name: cb.mypromomall(AWS-PROD)
+  - server:
+      healthcheck_url: https://www.channingbete.com/
+      healthy_status: 200
+      timeout_duration: 60
+      display_name: cb.mypromomall(AWS-PROD)
+  - server:
+      healthcheck_url: https://qa.mypromomall.com/preview/login.admin
+      healthy_status: 200
+      timeout_duration: 60
+      display_name: qa.mypromomall(AWS-TEST)
+  - server:
+      healthcheck_url: https://qa.mypromomall.com/login.admin
+      healthy_status: 200
+      timeout_duration: 60
+      display_name: qa.mypromomall(AWS-TEST)
+  - server:
+      healthcheck_url: https://qa.mypromomall.com/basestore_halo
+      healthy_status: 200
+      timeout_duration: 60
+      display_name: qa.mypromomall(AWS-TEST)
+  - server:
+      healthcheck_url: https://ccpay.mybrandmall.com/haloccpay/?token=2
+      healthy_status: 200
+      timeout_duration: 60
+      display_name: SHOPSTAR2-CCP
 
 smtp:
   server: smtp.gmail.com
